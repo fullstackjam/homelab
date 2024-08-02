@@ -5,10 +5,7 @@ export KUBECONFIG = $(shell pwd)/kubeconfig.yaml
 
 default: boot cluster
 
-~/.ssh/id_ed25519:
-	ssh-keygen -t ed25519 -P '' -f "$@"
-
-boot: ~/.ssh/id_ed25519
+boot: ~/.ssh/id_rsa
 	ansible-playbook \
 		--inventory inventories/${env}.yml \
 		boot.yml
