@@ -103,7 +103,7 @@ app-template:
                 description: Git forge
                 icon: gitea.svg
             - Woodpecker:
-                href: https://woodpecker.fullstackjam.dev
+                href: https://ci.fullstackjam.dev
                 description: Continuous integration
                 icon: woodpecker-ci.svg
             - ArgoCD:
