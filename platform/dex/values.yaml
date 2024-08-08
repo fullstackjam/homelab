@@ -33,7 +33,7 @@ dex:
       - id: gitea
         name: Gitea
         redirectURIs:
-          - 'https://git.fullstackjam.dev/user/oauth2/Dex/callback'
+          - 'https://gitea.fullstackjam.dev/user/oauth2/Dex/callback'
         secretEnv: GITEA_CLIENT_SECRET
   envFrom:
     - secretRef:

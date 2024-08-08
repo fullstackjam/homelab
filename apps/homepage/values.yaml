@@ -99,7 +99,7 @@ app-template:
                 icon: https://auth.fullstackjam.dev/pkg/img/logo-square.svg
           - Development:
             - Gitea:
-                href: https://git.fullstackjam.dev
+                href: https://gitea.fullstackjam.dev
                 description: Git forge
                 icon: gitea.svg
             - Woodpecker:
