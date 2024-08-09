@@ -19,6 +19,8 @@ woodpecker:
       enabled: true
       annotations:
         cert-manager.io/cluster-issuer: letsencrypt-prod
+        external-dns.alpha.kubernetes.io/target: homelab-tunnel.fullstackjam.org
+        external-dns.alpha.kubernetes.io/cloudflare-proxied: 'true'
       ingressClassName: nginx
       hosts:
         - host: &host woodpecker.fullstackjam.org

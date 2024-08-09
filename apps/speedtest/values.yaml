@@ -19,6 +19,8 @@ app-template:
       annotations:
         nginx.ingress.kubernetes.io/proxy-body-size: 50m
         cert-manager.io/cluster-issuer: letsencrypt-prod
+        external-dns.alpha.kubernetes.io/target: homelab-tunnel.fullstackjam.org
+        external-dns.alpha.kubernetes.io/cloudflare-proxied: 'true'
       hosts:
         - host: &host speedtest.fullstackjam.org
           paths:
