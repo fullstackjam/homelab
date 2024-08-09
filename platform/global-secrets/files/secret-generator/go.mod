@@ -1,4 +1,4 @@
-module gitea.fullstackjam.dev/khuedoan/homelab/platform/secret-generator
+module gitea.fullstackjam.org/khuedoan/homelab/platform/secret-generator
 
 go 1.19
 

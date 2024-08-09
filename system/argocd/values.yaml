@@ -1,6 +1,6 @@
 argo-cd:
   global:
-    domain: argo.fullstackjam.dev
+    domain: argo.fullstackjam.org
   configs:
     params:
       server.insecure: true
@@ -16,7 +16,7 @@ argo-cd:
       ingressClassName: nginx
       annotations:
         cert-manager.io/cluster-issuer: letsencrypt-prod
-        external-dns.alpha.kubernetes.io/target: homelab-tunnel.fullstackjam.dev
+        external-dns.alpha.kubernetes.io/target: homelab-tunnel.fullstackjam.org
         external-dns.alpha.kubernetes.io/cloudflare-proxied: 'true'
       tls: true
     metrics: &metrics
