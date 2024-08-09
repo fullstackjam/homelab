@@ -21,7 +21,7 @@ app-template:
           metrics: 0.0.0.0:2000
           no-autoupdate: true
           ingress:
-            - hostname: '*.fullstackjam.dev'
+            - hostname: '*.fullstackjam.org'
               service: https://ingress-nginx-controller.ingress-nginx
               originRequest:
                 noTLSVerify: true
