@@ -5,7 +5,7 @@
 KUBECONFIG = $(shell pwd)/metal/kubeconfig.yaml
 KUBE_CONFIG_PATH = $(KUBECONFIG)
 
-default: external smoke-test post-install clean
+default: external post-install clean
 
 configure:
 	./scripts/configure
