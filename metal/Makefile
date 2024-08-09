@@ -3,7 +3,7 @@
 env ?= prod
 export KUBECONFIG = $(shell pwd)/kubeconfig.yaml
 
-default: boot cluster
+default: boot
 
 boot: ~/.ssh/id_rsa
 	ansible-playbook \
