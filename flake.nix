@@ -30,6 +30,7 @@
             git
             go
             gotestsum
+            helmfile
             iproute2
             jq
             k9s
