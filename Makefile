@@ -2,17 +2,17 @@
 .PHONY: *
 .EXPORT_ALL_VARIABLES:
 
-KUBECONFIG = $(shell pwd)/metal/kubeconfig.yaml
+KUBECONFIG = $(shell pwd)/infra/kubeconfig.yaml
 KUBE_CONFIG_PATH = $(KUBECONFIG)
 
-default: metal system external smoke-test post-install clean
+default: infra system external smoke-test post-install
 
 configure:
 	./scripts/configure
 	git status
 
-metal:
-	make -C metal
+infra:
+	make -C infra
 
 system:
 	make -C system
@@ -45,8 +45,6 @@ tools:
 test:
 	make -C test
 
-clean:
-	docker compose --project-directory ./metal/roles/pxe_server/files down
 
 docs:
 	mkdocs serve

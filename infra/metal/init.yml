@@ -1,0 +1,4 @@
+- name: pre configure metal
+  hosts: metal
+  roles:
+    - sysctl_tuning

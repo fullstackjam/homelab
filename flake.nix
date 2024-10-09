@@ -50,6 +50,7 @@
 
             (python3.withPackages (p: with p; [
               jinja2
+              pip
               kubernetes
               mkdocs-material
               netaddr
