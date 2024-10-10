@@ -27,7 +27,8 @@ patch_svc:
 	kubectl patch svc longhorn-frontend -n longhorn-system -p '{"spec": {"type": "LoadBalancer"}}'
 
 clean-helm:
-	helm uninstall metallb -n metallb-system
 	kubectl -n longhorn-system patch -p '{"value": "true"}' --type=merge lhs deleting-confirmation-flag
+	helm uninstall metallb -n metallb-system
 	helm uninstall longhorn -n longhorn-system
-	kubectl delete ns metallb-system longhorn-system
+	helm uninstall metrics-server -n metrics-server-system
+	kubectl delete ns metallb-system longhorn-system metrics-server-system

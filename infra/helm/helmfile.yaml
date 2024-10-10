@@ -3,6 +3,8 @@ repositories:
     url: https://charts.longhorn.io
   - name: metallb
     url: https://metallb.github.io/metallb
+  - name: metrics-server
+    url: https://kubernetes-sigs.github.io/metrics-server/
 
 ---
 releases:
@@ -17,3 +19,9 @@ releases:
     chart: metallb/metallb
     namespace: metallb-system
     version: 0.14.5
+
+  # metrics server
+  - name: metrics-server
+    chart: metrics-server/metrics-server
+    namespace: metrics-server-system
+    version: 3.12.2
