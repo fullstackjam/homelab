@@ -13,7 +13,5 @@ uptime-kuma:
       - hosts:
           - *host
         secretName: uptime-kuma-tls-certificate
-  serviceMonitor:
-    enabled: true
   image:
     tag: latest
