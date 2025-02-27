@@ -43,9 +43,9 @@ It will prompt you to edit the inventory:
 
 !!! example
 
-    ```yaml title="metal/inventories/prod.yml"
+    ```yaml title="infra/metal/inventories/prod.yml"
     --8<--
-    metal/inventories/prod.yml
+    infra/metal/inventories/prod.yml
     --8<--
     ```
 

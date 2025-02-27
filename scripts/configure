@@ -86,14 +86,14 @@ def main() -> None:
         pattern=upstream_config['loadbalancer_ip_range'],
         replacement=loadbalancer_ip_range,
         paths=[
-            "metal/inventories/prod.yml",
+            "infra/metal/inventories/prod.yml",
             "apps/tailscale/values.yaml",
         ]
     )
 
     if Confirm.ask("Update server list?", default=True):
         subprocess.run(
-            [editor, 'metal/inventories/prod.yml']
+            [editor, 'infra/metal/inventories/prod.yml']
         )
 
 

@@ -10,11 +10,11 @@ Or how to scale vertically. To replace the same node with a clean OS, remove it 
 
 Add its details to the inventory **at the end of the group** (masters or workers):
 
-```diff title="metal/inventories/prod.yml"
-diff --git a/metal/inventories/prod.yml b/metal/inventories/prod.yml
+```diff title="infra/metal/inventories/prod.yml"
+diff --git a/infra/metal/inventories/prod.yml b/infra/metal/inventories/prod.yml
 index 7f6474a..1bb2cbc 100644
---- a/metal/inventories/prod.yml
-+++ b/metal/inventories/prod.yml
+--- a/infra/metal/inventories/prod.yml
++++ b/infra/metal/inventories/prod.yml
 @@ -8,3 +8,4 @@ metal:
      workers:
        hosts:
@@ -38,11 +38,11 @@ That's it!
 
 Remove it from the inventory:
 
-```diff title="metal/inventories/prod.yml"
-diff --git a/metal/inventories/prod.yml b/metal/inventories/prod.yml
+```diff title="infra/metal/inventories/prod.yml"
+diff --git a/infra/metal/inventories/prod.yml b/infra/metal/inventories/prod.yml
 index 7f6474a..d12b50a 100644
---- a/metal/inventories/prod.yml
-+++ b/metal/inventories/prod.yml
+--- a/infra/metal/inventories/prod.yml
++++ b/infra/metal/inventories/prod.yml
 @@ -4,7 +4,6 @@ metal:
        hosts:
          metal0: {ansible_host: 192.168.1.110, mac: '00:23:24:d1:f3:f0', disk: sda, network_interface: eno1}
