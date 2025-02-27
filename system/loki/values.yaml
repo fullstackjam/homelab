@@ -1,8 +1,0 @@
-loki-stack:
-  loki:
-    serviceMonitor:
-      enabled: true
-    image:
-      tag: 2.8.6
-    ruler:
-      enabled: false
