@@ -4,5 +4,3 @@ loki-stack:
       enabled: true
     image:
       tag: 2.8.6
-    ruler:
-      enable_alertmanager_v2: false
