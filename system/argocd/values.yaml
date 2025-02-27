@@ -1,10 +1,6 @@
 argo-cd:
   global:
     domain: argocd.fullstackjam.dev
-    hostAliases:
-      - ip: 185.199.109.153
-        hostnames:
-          - zotregistry.dev
   configs:
     params:
       server.insecure: true
