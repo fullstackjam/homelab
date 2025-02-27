@@ -15,3 +15,5 @@ uptime-kuma:
         secretName: uptime-kuma-tls-certificate
   serviceMonitor:
     enabled: true
+  image:
+    tag: latest
