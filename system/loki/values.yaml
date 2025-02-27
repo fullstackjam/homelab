@@ -4,3 +4,5 @@ loki-stack:
       enabled: true
     image:
       tag: 2.8.6
+    ruler:
+      enabled: false
