@@ -3,4 +3,4 @@ loki-stack:
     serviceMonitor:
       enabled: true
     image:
-      tag: 3.4.2
+      tag: 2.8.0
