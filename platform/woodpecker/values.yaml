@@ -1,7 +1,7 @@
 woodpecker:
   agent:
     env:
-      WOODPECKER_PLUGINS_PRIVILEGED: woodpeckerci/plugin-docker-buildx:5.0.0
+      WOODPECKER_PLUGINS_PRIVILEGED: "woodpeckerci/plugin-docker-buildx:5.0.0"
   server:
     env:
       WOODPECKER_HOST: https://ci.fullstackjam.dev
