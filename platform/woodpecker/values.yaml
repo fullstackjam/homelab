@@ -1,4 +1,6 @@
 woodpecker:
+  agent:
+    extraSecretNamesForEnvFrom: ["woodpecker-client-secret"]
   server:
     env:
       WOODPECKER_HOST: https://ci.fullstackjam.dev
