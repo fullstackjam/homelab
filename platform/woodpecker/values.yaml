@@ -1,4 +1,7 @@
 woodpecker:
+  agent:
+    mapAgentSecret: false
+    extraSecretNamesForEnvFrom: ["woodpecker-secret"]
   server:
     env:
       WOODPECKER_HOST: https://ci.fullstackjam.dev
@@ -8,6 +11,7 @@ woodpecker:
       WOODPECKER_OPEN: true
       WOODPECKER_ADMIN: gitea_admin
     extraSecretNamesForEnvFrom: ["woodpecker-secret"]
+    createAgentSecret: false
     ingress:
       enabled: true
       annotations:
