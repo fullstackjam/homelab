@@ -68,7 +68,7 @@ argocd-apps:
               - ApplyOutOfSyncOnly=true
               - ServerSideApply=true
   applications:
-    portfilio:
+    portfolio:
       enabled: true
       project: "default"
       repoUrl: https://github.com/fullstackjam/portfolio.git
