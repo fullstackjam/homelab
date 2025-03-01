@@ -35,7 +35,7 @@ argocd-apps:
       namespace: argocd
       generators:
         - git:
-            repoURL: &repoURL https://github.com/fullstackjam/homelab
+            repoURL: https://github.com/fullstackjam/homelab
             revision: &revision master
             directories:
               - path: system/*
@@ -50,7 +50,7 @@ argocd-apps:
             namespace: '{{path.basename}}'
           project: default  # TODO
           source:
-            repoURL: *repoURL
+            repoURL: https://github.com/fullstackjam/homelab
             path: '{{path}}'
             targetRevision: *revision
           syncPolicy:
@@ -76,7 +76,7 @@ argocd-apps:
       path: helm/portfolio
       destination:
         namespace: default
-        server: https://kubernetes.default.svc
+        server: in-cluster
       helm:
         valueFiles:
           - values.yaml
@@ -93,7 +93,7 @@ argocd-apps:
       path: helm/flask-watchlist
       destination:
         namespace: default
-        server: https://kubernetes.default.svc
+        server: in-cluster
       helm:
         valueFiles:
           - values.yaml
