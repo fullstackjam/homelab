@@ -10,7 +10,7 @@ metadata:
 spec:
   project: {{ $appConfig.project | default "default" | quote }}
   source:
-    repoURL: {{ $appConfig.repoUrl }}
+    repoURL: {{ $appConfig.repoURL }}
     targetRevision: {{ $appConfig.targetRevision | default "HEAD" }}
     path: {{ $appConfig.path }}
     {{- if $appConfig.helm }}
