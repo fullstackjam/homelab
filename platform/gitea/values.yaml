@@ -14,6 +14,8 @@ gitea:
         hosts:
           - *host
   gitea:
+    image:
+      tag: 1.19.3
     admin:
       existingSecret: gitea-admin-secret
     config:
