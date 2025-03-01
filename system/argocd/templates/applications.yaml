@@ -8,7 +8,7 @@ metadata:
   name: {{ $appName }}
   namespace: {{ $.Release.Namespace | default "argocd" }}
 spec:
-  project: default
+  project: {{ $appConfig.project | default "default" | quote }}
   source:
     repoURL: {{ $appConfig.repoUrl }}
     targetRevision: {{ $appConfig.targetRevision | default "HEAD" }}

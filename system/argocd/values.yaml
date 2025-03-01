@@ -70,6 +70,7 @@ argocd-apps:
   applications:
     portfilio:
       enabled: true
+      project: "default"
       repoUrl: https://github.com/fullstackjam/portfolio.git
       targetRevision: main
       path: helm/portfolio
@@ -85,6 +86,7 @@ argocd-apps:
 
     flask-watchlist:
       enabled: true
+      project: "default"
       repoUrl: https://github.com/fullstackjam/flask-watchlist.git
       targetRevision: main
       path: helm/flask-watchlist
