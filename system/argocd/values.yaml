@@ -71,10 +71,11 @@ argocd-apps:
     portfolio:
       enabled: true
       project: "default"
-      repoUrl: https://github.com/fullstackjam/portfolio.git
+      repoUrl: https://github.com/fullstackjam/portfolio
       targetRevision: main
       path: helm/portfolio
       destination:
+        namespace: default
         server: https://kubernetes.default.svc
       helm:
         valueFiles:
@@ -87,10 +88,11 @@ argocd-apps:
     flask-watchlist:
       enabled: true
       project: "default"
-      repoUrl: https://github.com/fullstackjam/flask-watchlist.git
+      repoUrl: https://github.com/fullstackjam/flask-watchlist
       targetRevision: main
       path: helm/flask-watchlist
       destination:
+        namespace: default
         server: https://kubernetes.default.svc
       helm:
         valueFiles:
