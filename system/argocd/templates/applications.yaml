@@ -1,0 +1,35 @@
+# templates/applications.yaml
+{{- range $appName, $appConfig := .Values.applications }}
+{{- if $appConfig.enabled }}
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: {{ $appName }}
+  namespace: {{ $.Release.Namespace | default "argocd" }}
+spec:
+  project: default
+  source:
+    repoURL: {{ $appConfig.repoUrl }}
+    targetRevision: {{ $appConfig.targetRevision | default "HEAD" }}
+    path: {{ $appConfig.path }}
+    {{- if $appConfig.helm }}
+    helm:
+      {{- if $appConfig.helm.valueFiles }}
+      valueFiles:
+        {{- toYaml $appConfig.helm.valueFiles | nindent 8 }}
+      {{- end }}
+      {{- if $appConfig.helm.values }}
+      values: |
+        {{- $appConfig.helm.values | nindent 8 }}
+      {{- end }}
+    {{- end }}
+  destination:
+    server: {{ $appConfig.destination.server | default "https://kubernetes.default.svc" }}
+    namespace: {{ $appConfig.destination.namespace }}
+  syncPolicy:
+    {{- with $appConfig.syncPolicy }}
+    {{- toYaml . | nindent 4 }}
+    {{- end }}
+{{- end }}
+{{- end }}

@@ -67,3 +67,29 @@ argocd-apps:
               - CreateNamespace=true
               - ApplyOutOfSyncOnly=true
               - ServerSideApply=true
+  applications:
+    portfilio:
+      enabled: true
+      repoUrl: https://github.com/fullstackjam/portfolio.git
+      targetRevision: main
+      path: helm/portfolio
+      destination:
+        server: https://kubernetes.default.svc
+      helm:
+        valueFiles:
+          - values.yaml
+      syncPolicy:
+        automated:
+          prune: true
+          selfHeal: true
+
+    flask-watchlist:
+      enabled: true
+      repoUrl: https://github.com/fullstackjam/flask-watchlist.git
+      targetRevision: main
+      path: helm/flask-watchlist
+      destination:
+        server: https://kubernetes.default.svc
+      helm:
+        valueFiles:
+          - values.yaml
