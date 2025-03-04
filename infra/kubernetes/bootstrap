@@ -59,6 +59,8 @@ def generate_hosts_yaml(master_nodes: dict, worker_nodes: dict):
         "kube_control_plane_hosts": list(master_nodes.keys()),
         "kube_node_hosts": list(all_hosts.keys()),
         "etcd_hosts": list(master_nodes.keys()),
+        "kube_proxy_metrics_bind_address": "0.0.0.0:10249",
+        "metrics_server_enabled": True
     }
 
     # Load Jinja2 template
