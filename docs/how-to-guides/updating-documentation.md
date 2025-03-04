@@ -22,11 +22,11 @@ Then visit [localhost:8000](http://localhost:8000)
 
 ## Deployment
 
-It's running on my other cluster in the [khuedoan/horus](https://github.com/khuedoan/horus) project
+It's running on my other cluster in the [fullstackjam/horus](https://github.com/fullstackjam/horus) project
 (so if the homelab goes down everyone can still read the documentation).
 
 <!-- TODO -->
-<!-- This website is running in both my homelab cluster and on my other cluster in the [khuedoan/horus](https://github.com/khuedoan/horus) project (both in `apps/homelab-docs`), -->
+<!-- This website is running in both my homelab cluster and on my other cluster in the [fullstackjam/horus](https://github.com/fullstackjam/horus) project (both in `apps/homelab-docs`), -->
 <!-- with manual DNS switch over in case I want to rebuild either of them (this is the most cost effective way to do this that I can think of). -->
 
 <!-- You don't have to do this, you can host it on 1 cluster just fine. -->

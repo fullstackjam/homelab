@@ -133,7 +133,7 @@ app-template:
               - href: https://homelab.fullstackjam.dev
                 icon: google-docs.svg
             - Public homelab repository:
-              - href: https://github.com/khuedoan/homelab
+              - href: https://github.com/fullstackjam/homelab
                 icon: github.svg
           - Managed services:
             - Cloudflare:

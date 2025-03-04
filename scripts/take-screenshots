@@ -15,23 +15,23 @@ from selenium import webdriver
 apps = [
     {
         'name': 'home',
-        'url': 'https://home.khuedoan.com'
+        'url': 'https://home.fullstackjam.dev'
     },
     {
         'name': 'gitea',
-        'url': 'https://git.khuedoan.com/ops/homelab'
+        'url': 'https://git.fullstackjam.dev/ops/homelab'
     },
     {
         'name': 'argocd',
-        'url': 'https://argocd.khuedoan.com/applications/root'
+        'url': 'https://argocd.fullstackjam.dev/applications/root'
     },
     {
         'name': 'matrix',
-        'url': 'https://chat.khuedoan.com/#/room/#random:matrix.khuedoan.com'
+        'url': 'https://chat.fullstackjam.dev/#/room/#random:matrix.fullstackjam.dev'
     },
     {
         'name': 'grafana',
-        'url': 'https://grafana.khuedoan.com/d/efa86fd1d0c121a26444b636a3f509a8/kubernetes-compute-resources-cluster'  # wtf is this ID
+        'url': 'https://grafana.fullstackjam.dev/d/efa86fd1d0c121a26444b636a3f509a8/kubernetes-compute-resources-cluster'  # wtf is this ID
     },
 ]
 
@@ -41,7 +41,7 @@ options.headless = True
 driver = webdriver.Firefox(
     options=options,
     firefox_profile=webdriver.FirefoxProfile(  # TODO deprecated
-        profile_directory="/home/khuedoan/.mozilla/firefox/h05irklw.default-release"  # TODO do not hard code
+        profile_directory="/home/fullstackjam/.mozilla/firefox/h05irklw.default-release"  # TODO do not hard code
     )
 )
 driver.set_window_size(1920, 1080)
