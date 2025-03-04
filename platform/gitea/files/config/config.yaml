@@ -11,28 +11,22 @@ organizations:
       - name: Owners
         members:
           - renovate
-  - name: fullstackjam
-    description: Operations
-    teams:
-      - name: Owners
-        members:
-          - renovate
 repositories:
   - name: homelab
-    owner: fullstackjam
+    owner: ops
     private: false
     migrate:
       source: https://github.com/fullstackjam/homelab
-      mirror: false
+      mirror: true
   - name: portfolio
-    owner: fullstackjam
+    owner: ops
     private: false
     migrate:
       source: https://github.com/fullstackjam/portfolio
       mirror: false
   - name: flask-watchlist
-    owner: fullstackjam
+    owner: ops
     private: false
     migrate:
       source: https://github.com/fullstackjam/flask-watchlist
-      mirror: false
+      mirror: true
