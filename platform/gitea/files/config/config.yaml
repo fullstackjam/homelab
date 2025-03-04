@@ -5,7 +5,7 @@
 #     email: bot@renovateapp.com
 #     tokenSecretRef: renovate-secret # ???
 organizations:
-  - name: ops
+  - name: fullstackjam
     description: Operations
     teams:
       - name: Owners
@@ -13,19 +13,19 @@ organizations:
           - renovate
 repositories:
   - name: homelab
-    owner: ops
+    owner: fullstackjam
     private: false
     migrate:
       source: https://github.com/fullstackjam/homelab
       mirror: true
   - name: portfolio
-    owner: ops
+    owner: fullstackjam
     private: false
     migrate:
       source: https://github.com/fullstackjam/portfolio
       mirror: true
   - name: flask-watchlist
-    owner: ops
+    owner: fullstackjam
     private: false
     migrate:
       source: https://github.com/fullstackjam/flask-watchlist

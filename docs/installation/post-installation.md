@@ -4,8 +4,8 @@
 
 Save the following files to a safe location like a password manager (if you're using the sandbox, you can skip this step):
 
-- `~/.ssh/id_ed25519`
-- `~/.ssh/id_ed25519.pub`
+- `~/.ssh/id_rsa`
+- `~/.ssh/id_rsa.pub`
 - `./infra/kubeconfig.yaml`
 - `~/.terraform.d/credentials.tfrc.json`
 - `./external/terraform.tfvars`
@@ -19,8 +19,8 @@ Save the following files to a safe location like a password manager (if you're u
     - Username: `gitea_admin`
     - Password: get from `global-secrets` namespace
 - Kanidm:
-    - Usernames: `admin` and `idm_admin`
-    - Password: run `./scripts/kanidm-reset-password admin` and `./scripts/kanidm-reset-password idm_admin`
+    - Usernames: `idm_admin`
+    - Password: run `./scripts/kanidm-reset-password idm_admin`
 - Jellyfin and other applications in the \*arr stack: see the [dedicated guide for media management](../how-to-guides/media-management.md)
 - Other apps:
     - Username: `admin`
