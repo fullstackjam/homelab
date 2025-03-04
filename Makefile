@@ -5,7 +5,7 @@
 KUBECONFIG = $(shell pwd)/infra/kubeconfig.yaml
 KUBE_CONFIG_PATH = $(KUBECONFIG)
 
-default: infra
+default: infra system external smoke-test post-install
 
 configure:
 	./scripts/configure
