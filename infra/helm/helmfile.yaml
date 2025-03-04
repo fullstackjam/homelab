@@ -10,10 +10,10 @@ releases:
   - name: longhorn
     chart: longhorn/longhorn
     namespace: longhorn-system
-    version: 1.8.0
+    version: 1.6.2
 
   # Load balancer
   - name: metallb
     chart: metallb/metallb
     namespace: metallb-system
-    version: 0.14.9
+    version: 0.14.5
