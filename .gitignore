@@ -8,5 +8,3 @@ book/
 *kubeconfig.yaml
 Chart.lock
 infra/kubernetes/kubespray/
-
-site/
