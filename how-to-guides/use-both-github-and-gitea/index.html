@@ -1348,7 +1348,7 @@
 <h1 id="use-both-github-and-gitea">Use both GitHub and Gitea</h1>
 <p>Even though we self-host Gitea, you may still want to use GitHub as a backup and for discovery.</p>
 <p>Add both push URLs (replace my repositories with yours):</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>remote<span class="w"> </span>set-url<span class="w"> </span>--add<span class="w"> </span>--push<span class="w"> </span>origin<span class="w"> </span>git@git.fullstackjam.dev:ops/homelab
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>remote<span class="w"> </span>set-url<span class="w"> </span>--add<span class="w"> </span>--push<span class="w"> </span>origin<span class="w"> </span>git@git.fullstackjam.com:ops/homelab
 git<span class="w"> </span>remote<span class="w"> </span>set-url<span class="w"> </span>--add<span class="w"> </span>--push<span class="w"> </span>origin<span class="w"> </span>git@github.com:fullstackjam/homelab
 </code></pre></div>
 <p>Now you can just run <code>git push</code> like usual and it will push to both GitHub and Gitea.</p>
