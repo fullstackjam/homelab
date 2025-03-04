@@ -59,7 +59,7 @@ See [admin credentials](post-installation#admin-credentials) for default passwor
 If you want to make some changes, simply commit to the local `dev` branch and push it to Gitea in the sandbox:
 
 ```sh
-git remote add sandbox https://git.127-0-0-1.nip.io/ops/homelab
+git remote add sandbox https://git.127-0-0-1.nip.io/fullstackjam/homelab
 git config http.https://git.127-0-0-1.nip.io.sslVerify false
 
 git add foobar.txt

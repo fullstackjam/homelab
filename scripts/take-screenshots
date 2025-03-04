@@ -19,7 +19,7 @@ apps = [
     },
     {
         'name': 'gitea',
-        'url': 'https://git.fullstackjam.dev/ops/homelab'
+        'url': 'https://git.fullstackjam.dev/fullstackjam/homelab'
     },
     {
         'name': 'argocd',
