@@ -6,9 +6,6 @@ all:
       ip: {{ ip }}
       access_ip: {{ ip }}
     {% endfor %}
-  vars:
-    kube_proxy_metrics_bind_address: {{ kube_proxy_metrics_bind_address }}
-    metrics_server_enabled: {{ metrics_server_enabled }}
   children:
     kube_control_plane:
       hosts:

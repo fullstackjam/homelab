@@ -59,8 +59,6 @@ def generate_hosts_yaml(master_nodes: dict, worker_nodes: dict):
         "kube_control_plane_hosts": list(master_nodes.keys()),
         "kube_node_hosts": list(all_hosts.keys()),
         "etcd_hosts": list(master_nodes.keys()),
-        "kube_proxy_metrics_bind_address": "0.0.0.0:10249",
-        "metrics_server_enabled": True
     }
 
     # Load Jinja2 template
@@ -86,6 +84,24 @@ def generate_hosts_yaml(master_nodes: dict, worker_nodes: dict):
     if edit_choice.lower() == 'y':
         subprocess.run(["nvim", output_path], check=True)
         print(f"File {output_path} opened for editing in nvim.")
+
+def update_metrics_server_config():
+    addons_path = "inventory/mycluster/group_vars/k8s_cluster/addons.yml"
+    with open(addons_path, 'r+') as f:
+        config = yaml.safe_load(f) or {}
+        config['metrics_server_enabled'] = True
+        f.seek(0)
+        yaml.dump(config, f, default_flow_style=False)
+        f.truncate()
+
+def update_kube_proxy_config():
+    k8s_cluster_path = "inventory/mycluster/group_vars/k8s_cluster/k8s-cluster.yml"
+    with open(k8s_cluster_path, 'r+') as f:
+        config = yaml.safe_load(f) or {}
+        config['kube_proxy_metrics_bind_address'] = "0.0.0.0:10249"
+        f.seek(0)
+        yaml.dump(config, f, default_flow_style=False)
+        f.truncate()
 
 def update_cilium_config():
     config_file_path = "../cilium_config.yml"
@@ -152,6 +168,9 @@ def main():
     master_nodes, worker_nodes = parse_prod_yaml()
     copy_inventory()
     generate_hosts_yaml(master_nodes, worker_nodes)
+    update_kube_proxy_config()
+    update_metrics_server_config()
+    update_cilium_config()
     run_ansible_playbook()
     fetch_and_modify_admin_conf(master_nodes)
 
