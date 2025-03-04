@@ -19,7 +19,7 @@ app-template:
       annotations:
         cert-manager.io/cluster-issuer: letsencrypt-prod
       hosts:
-        - host: &host home.fullstackjam.dev
+        - host: &host home.fullstackjam.com
           paths:
             - path: /
               pathType: Prefix
@@ -61,76 +61,76 @@ app-template:
         services.yaml: |
           - Popular:
             - Matrix:
-                href: https://chat.fullstackjam.dev
+                href: https://chat.fullstackjam.com
                 description: Chat client
                 icon: element.svg
             - Jellyfin:
-                href: https://jellyfin.fullstackjam.dev
+                href: https://jellyfin.fullstackjam.com
                 description: Media system (movies, music, etc.)
                 icon: jellyfin.svg
             - Jellyseerr:
-                href: https://jellyseerr.fullstackjam.dev
+                href: https://jellyseerr.fullstackjam.com
                 description: Request media
                 icon: jellyseerr.svg
             - Paperless:
-                href: https://paperless.fullstackjam.dev
+                href: https://paperless.fullstackjam.com
                 description: Document management system
                 icon: paperless.svg
           - Management:
             - Transmission:
-                href: https://transmission.fullstackjam.dev
+                href: https://transmission.fullstackjam.com
                 description: Bittorrent client
                 icon: transmission.svg
             - Prowlarr:
-                href: https://prowlarr.fullstackjam.dev
+                href: https://prowlarr.fullstackjam.com
                 description: Indexer manager
                 icon: prowlarr.svg
             - Radarr:
-                href: https://radarr.fullstackjam.dev
+                href: https://radarr.fullstackjam.com
                 description: Movie manager
                 icon: radarr.svg
             - Sonarr:
-                href: https://sonarr.fullstackjam.dev
+                href: https://sonarr.fullstackjam.com
                 description: TV show manager
                 icon: sonarr.svg
             - Kanidm:
-                href: https://auth.fullstackjam.dev
+                href: https://auth.fullstackjam.com
                 description: Identity management
-                icon: https://auth.fullstackjam.dev/pkg/img/logo-square.svg
+                icon: https://auth.fullstackjam.com/pkg/img/logo-square.svg
           - Development:
             - Gitea:
-                href: https://git.fullstackjam.dev
+                href: https://git.fullstackjam.com
                 description: Git forge
                 icon: gitea.svg
             - Woodpecker:
-                href: https://ci.fullstackjam.dev
+                href: https://ci.fullstackjam.com
                 description: Continuous integration
                 icon: woodpecker-ci.svg
             - ArgoCD:
-                href: https://argocd.fullstackjam.dev
+                href: https://argocd.fullstackjam.com
                 description: Continuous deployment
                 icon: argocd.svg
             - Registry:
-                href: https://registry.fullstackjam.dev
+                href: https://registry.fullstackjam.com
                 description: Container registry
                 icon: docker.svg
             - Grafana:
-                href: https://grafana.fullstackjam.dev
+                href: https://grafana.fullstackjam.com
                 description: Observability dashboards
                 icon: grafana.svg
           - Utilities:
             - Excalidraw:
-                href: https://draw.fullstackjam.dev
+                href: https://draw.fullstackjam.com
                 description: Virtual whiteboard
                 icon: excalidraw.svg
             - Speedtest:
-                href: https://speedtest.fullstackjam.dev
+                href: https://speedtest.fullstackjam.com
                 description: Internal network speed test
                 icon: openspeedtest.png
         bookmarks.yaml: |
           - Homelab:
             - Documentation:
-              - href: https://homelab.fullstackjam.dev
+              - href: https://homelab.fullstackjam.com
                 icon: google-docs.svg
             - Public homelab repository:
               - href: https://github.com/fullstackjam/homelab

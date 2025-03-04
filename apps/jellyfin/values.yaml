@@ -57,42 +57,42 @@ app-template:
       annotations:
         cert-manager.io/cluster-issuer: letsencrypt-prod
       hosts:
-        - host: &jellyfinHost jellyfin.fullstackjam.dev
+        - host: &jellyfinHost jellyfin.fullstackjam.com
           paths:
             - path: /
               pathType: Prefix
               service:
                 name: main
                 port: http
-        - host: &transmissionHost transmission.fullstackjam.dev
+        - host: &transmissionHost transmission.fullstackjam.com
           paths:
             - path: /
               pathType: Prefix
               service:
                 name: main
                 port: transmission
-        - host: &prowlarrHost prowlarr.fullstackjam.dev
+        - host: &prowlarrHost prowlarr.fullstackjam.com
           paths:
             - path: /
               pathType: Prefix
               service:
                 name: main
                 port: prowlarr
-        - host: &radarrHost radarr.fullstackjam.dev
+        - host: &radarrHost radarr.fullstackjam.com
           paths:
             - path: /
               pathType: Prefix
               service:
                 name: main
                 port: radarr
-        - host: &sonarrHost sonarr.fullstackjam.dev
+        - host: &sonarrHost sonarr.fullstackjam.com
           paths:
             - path: /
               pathType: Prefix
               service:
                 name: main
                 port: sonarr
-        - host: &jellyseerrHost jellyseerr.fullstackjam.dev
+        - host: &jellyseerrHost jellyseerr.fullstackjam.com
           paths:
             - path: /
               pathType: Prefix

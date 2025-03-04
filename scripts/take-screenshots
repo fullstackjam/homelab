@@ -15,23 +15,23 @@ from selenium import webdriver
 apps = [
     {
         'name': 'home',
-        'url': 'https://home.fullstackjam.dev'
+        'url': 'https://home.fullstackjam.com'
     },
     {
         'name': 'gitea',
-        'url': 'https://git.fullstackjam.dev/fullstackjam/homelab'
+        'url': 'https://git.fullstackjam.com/fullstackjam/homelab'
     },
     {
         'name': 'argocd',
-        'url': 'https://argocd.fullstackjam.dev/applications/root'
+        'url': 'https://argocd.fullstackjam.com/applications/root'
     },
     {
         'name': 'matrix',
-        'url': 'https://chat.fullstackjam.dev/#/room/#random:matrix.fullstackjam.dev'
+        'url': 'https://chat.fullstackjam.com/#/room/#random:matrix.fullstackjam.com'
     },
     {
         'name': 'grafana',
-        'url': 'https://grafana.fullstackjam.dev/d/efa86fd1d0c121a26444b636a3f509a8/kubernetes-compute-resources-cluster'  # wtf is this ID
+        'url': 'https://grafana.fullstackjam.com/d/efa86fd1d0c121a26444b636a3f509a8/kubernetes-compute-resources-cluster'  # wtf is this ID
     },
 ]
 

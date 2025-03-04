@@ -19,10 +19,10 @@ app-template:
       className: nginx
       annotations:
         cert-manager.io/cluster-issuer: letsencrypt-prod
-        external-dns.alpha.kubernetes.io/target: homelab-tunnel.fullstackjam.dev
+        external-dns.alpha.kubernetes.io/target: homelab-tunnel.fullstackjam.com
         external-dns.alpha.kubernetes.io/cloudflare-proxied: 'true'
       hosts:
-        - host: &host draw.fullstackjam.dev
+        - host: &host draw.fullstackjam.com
           paths:
             - path: /
               pathType: Prefix

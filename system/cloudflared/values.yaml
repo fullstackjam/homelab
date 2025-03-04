@@ -23,7 +23,7 @@ app-template:
           no-autoupdate: true
           protocol: http2
           ingress:
-            - hostname: '*.fullstackjam.dev'
+            - hostname: '*.fullstackjam.com'
               service: https://ingress-nginx-controller.ingress-nginx
               originRequest:
                 noTLSVerify: true

@@ -12,10 +12,10 @@ woodpecker:
   server:
     createAgentSecret: false
     env:
-      WOODPECKER_HOST: https://ci.fullstackjam.dev
+      WOODPECKER_HOST: https://ci.fullstackjam.com
       WOODPECKER_WEBHOOK_HOST: http://woodpecker-server.woodpecker
       WOODPECKER_GITEA: true
-      WOODPECKER_GITEA_URL: https://git.fullstackjam.dev
+      WOODPECKER_GITEA_URL: https://git.fullstackjam.com
       WOODPECKER_OPEN: true
       WOODPECKER_ADMIN: gitea_admin
     extraSecretNamesForEnvFrom: ["woodpecker-secret"]
@@ -25,7 +25,7 @@ woodpecker:
         cert-manager.io/cluster-issuer: letsencrypt-prod
       ingressClassName: nginx
       hosts:
-        - host: &host ci.fullstackjam.dev
+        - host: &host ci.fullstackjam.com
           paths:
             - path: /
       tls:

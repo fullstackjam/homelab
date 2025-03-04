@@ -3,7 +3,7 @@ uptime-kuma:
     enabled: true
     className: nginx
     hosts:
-      - host: &host uptime-kuma.fullstackjam.dev
+      - host: &host uptime-kuma.fullstackjam.com
         paths:
           - path: /
             pathType: ImplementationSpecific

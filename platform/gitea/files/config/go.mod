@@ -1,4 +1,4 @@
-module git.fullstackjam.dev/fullstackjam/homelab/gitea/config
+module git.fullstackjam.com/fullstackjam/homelab/gitea/config
 
 go 1.19
 

@@ -5,7 +5,7 @@ renovate:
     config: |
       {
         "platform": "gitea",
-        "endpoint": "https://git.fullstackjam.dev/api/v1",
+        "endpoint": "https://git.fullstackjam.com/api/v1",
         "gitAuthor": "Renovate Bot <bot@renovateapp.com>",
         "autodiscover": true
       }

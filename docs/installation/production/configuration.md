@@ -31,7 +31,7 @@ make configure
     ```
     Text editor (nvim):
     Enter seed repo (github.com/fullstackjam/homelab): github.com/example/homelab
-    Enter your domain (fullstackjam.dev): example.com
+    Enter your domain (fullstackjam.com): example.com
     ```
 
 It will prompt you to edit the inventory:
