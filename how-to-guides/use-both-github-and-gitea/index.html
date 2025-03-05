@@ -512,27 +512,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting-started/vpn-setup/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    VPN setup
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../getting-started/user-onboarding/" class="md-nav__link">
         
   
@@ -616,27 +595,6 @@
             Concepts
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../concepts/pxe-boot/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    PXE boot
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
             
               
                 
@@ -872,90 +830,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../run-commands-on-multiple-nodes/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Run commands on multiple nodes
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../single-node-cluster-adjustments/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Single node cluster adjustments
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../disable-dhcp-proxy-in-dnsmasq/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Disable DHCP proxy in dnsmasq
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../media-management/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Media management
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../updating-documentation/" class="md-nav__link">
         
   
@@ -965,74 +839,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_10" >
-        
-          
-          <label class="md-nav__link" for="__nav_5_10" id="__nav_5_10_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Troubleshooting
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_10_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5_10">
-            <span class="md-nav__icon md-icon"></span>
-            Troubleshooting
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../troubleshooting/pxe-boot/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    PXE boot
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -1348,7 +1154,7 @@
 <h1 id="use-both-github-and-gitea">Use both GitHub and Gitea</h1>
 <p>Even though we self-host Gitea, you may still want to use GitHub as a backup and for discovery.</p>
 <p>Add both push URLs (replace my repositories with yours):</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>remote<span class="w"> </span>set-url<span class="w"> </span>--add<span class="w"> </span>--push<span class="w"> </span>origin<span class="w"> </span>git@git.fullstackjam.com:ops/homelab
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>remote<span class="w"> </span>set-url<span class="w"> </span>--add<span class="w"> </span>--push<span class="w"> </span>origin<span class="w"> </span>git@git.fullstackjam.com:fullstackjam/homelab
 git<span class="w"> </span>remote<span class="w"> </span>set-url<span class="w"> </span>--add<span class="w"> </span>--push<span class="w"> </span>origin<span class="w"> </span>git@github.com:fullstackjam/homelab
 </code></pre></div>
 <p>Now you can just run <code>git push</code> like usual and it will push to both GitHub and Gitea.</p>
