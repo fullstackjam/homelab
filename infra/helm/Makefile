@@ -17,7 +17,7 @@ install-helmfile:
 
 wait-metallb-speaker:
 	@echo "Waiting for 120 seconds to allow MetalLB speaker Pods to initialize..."
-	@sleep 60
+	@sleep 120
 
 kustomize: wait-metallb-speaker
 	kubectl apply -k kustomize
