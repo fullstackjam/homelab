@@ -97,4 +97,4 @@ require (
 )
 
 // TODO https://github.com/gruntwork-io/terratest/pull/1182
-replace github.com/gruntwork-io/terratest v0.46.1 => github.com/fullstackjam/terratest v0.0.0-20231027122225-118d656063b1
+replace github.com/gruntwork-io/terratest v0.46.1 => github.com/khuedoan/terratest v0.0.0-20231027122225-118d656063b1
