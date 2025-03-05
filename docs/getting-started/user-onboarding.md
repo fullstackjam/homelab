@@ -6,16 +6,15 @@
 
     Ask an admin to create your account, provide the following information:
 
-    - [ ] Full name (John Doe)
-    - [ ] Select a username (`johndoe`)
-    - [ ] Email address (`johndoe@example.com`)
+    - [ ] Full name (Jam Ma)
+    - [ ] Select a username (`fullstackjam`)
+    - [ ] Email address (`fullstackjam@example.com`)
 
     ## Install companion apps
 
     For all users:
 
     - [ ] A password manager (I personally recommend [Bitwarden](https://bitwarden.com/download))
-    - [ ] A [Matrix chat client](https://matrix.org/clients) (optional, you can use the web version)
 
     For technical users:
 

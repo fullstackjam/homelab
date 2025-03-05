@@ -18,9 +18,6 @@ theme:
     - search.share
 
 markdown_extensions:
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
   - attr_list
   - admonition
   - pymdownx.details
@@ -47,11 +44,9 @@ nav:
       - installation/production/deployment.md
     - installation/post-installation.md
   - Getting started:
-    - getting-started/vpn-setup.md
     - getting-started/user-onboarding.md
     - getting-started/install-pre-commit-hooks.md
   - Concepts:
-    - concepts/pxe-boot.md
     - concepts/secrets-management.md
     - concepts/certificate-management.md
     - concepts/tools-container.md
@@ -61,13 +56,7 @@ nav:
     - how-to-guides/expose-services-to-the-internet.md
     - how-to-guides/use-both-github-and-gitea.md
     - how-to-guides/add-or-remove-nodes.md
-    - how-to-guides/run-commands-on-multiple-nodes.md
-    - how-to-guides/single-node-cluster-adjustments.md
-    - how-to-guides/disable-dhcp-proxy-in-dnsmasq.md
-    - how-to-guides/media-management.md
     - how-to-guides/updating-documentation.md
-    - Troubleshooting:
-      - how-to-guides/troubleshooting/pxe-boot.md
   - Reference:
     - Architecture:
       - reference/architecture/overview.md

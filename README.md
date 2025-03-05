@@ -27,19 +27,17 @@ More information can be found in [the roadmap](#roadmap) below.
 
 ### Hardware
 
-![Hardware](https://user-images.githubusercontent.com/27996771/98970963-25137200-2543-11eb-8f2d-f9a2d45756ef.JPG)
-
-- 4 × NEC SFF `PC-MK26ECZDR` (Japanese version of the ThinkCentre M700):
-    - CPU: `Intel Core i5-6600T @ 2.70GHz`
-    - RAM: `16GB`
-    - SSD: `128GB`
-- TP-Link `TL-SG108` switch:
-    - Ports: `8`
-    - Speed: `1000Mbps`
+- 4 × TexHoo `ZNR7`:
+    - CPU: `AMD Ryzen 7 5700U 8C/16T @4.3GHz`
+    - RAM: `32GB`
+    - SSD: `1TB`
+- TP-Link `TL-sh1008` switch:
+    - Ports: `9`
+    - Speed: `2.5Gps`
 
 ### Features
 
-- [x] Common applications: Gitea, Jellyfin, Paperless...
+- [x] Common applications: Gitea, speedtest Paperless...
 - [x] Automated Kubernetes installation and management based on kubespary
 - [x] Installing and managing applications using GitOps
 - [x] Automatically update apps (with approval)
@@ -61,40 +59,25 @@ They can't capture all the project's features, but they are sufficient to get a 
 
 | Demo                                                                                                            |
 | :--:                                                                                                            |
-| [![][deploy-demo]](https://asciinema.org/a/xkBRkwC6e9RAzVuMDXH3nGHp7)                                           |
-| Deploy with a single command (after updating the configuration files)                                           |
-| [![][pxe-demo]](https://www.youtube.com/watch?v=y-d7btNNAT8)                                                    |
-| PXE boot                                                                                                        |
 | [![][hubble-demo]][hubble-demo]                                                                                 |
 | Observe network traffic with Hubble, built on top of [Cilium](https://cilium.io) and eBPF                       |
-| [![][homepage-demo]][homepage-demo]                                                                             |
-| Homepage powered by... [Homepage](https://gethomepage.dev)                                                      |
 | [![][grafana-demo]][grafana-demo]                                                                               |
 | Monitoring dashboard powered by [Grafana](https://grafana.com)                                                  |
 | [![][gitea-demo]][gitea-demo]                                                                                   |
 | Git server powered by [Gitea](https://gitea.io/en-us)                                                           |
-| [![][matrix-demo]][matrix-demo]                                                                                 |
-| [Matrix](https://matrix.org/) chat server                                                                       |
 | [![][woodpecker-demo]][woodpecker-demo]                                                                         |
 | Continuous integration with [Woodpecker CI](https://woodpecker-ci.org)                                          |
 | [![][argocd-demo]][argocd-demo]                                                                                 |
 | Continuous deployment with [ArgoCD](https://argoproj.github.io/cd)                                              |
 | [![][alert-demo]][alert-demo]                                                                                   |
 | [ntfy](https://ntfy.sh) displaying received alerts                                                              |
-| [![][ai-demo]][ai-demo]                                                                                         |
-| Self-hosted AI powered by [Ollama](https://ollama.com) (experimental, not very fast because I don't have a GPU) |
 
-[deploy-demo]: https://asciinema.org/a/xkBRkwC6e9RAzVuMDXH3nGHp7.svg
-[pxe-demo]: https://user-images.githubusercontent.com/27996771/157303477-df2e7410-8f02-4648-a86c-71e6b7e89e35.png
 [hubble-demo]: https://github.com/khuedoan/homelab/assets/27996771/9c6677d0-3564-47c0-852b-24b6a554b4a3
-[homepage-demo]: https://github.com/khuedoan/homelab/assets/27996771/d0eaf620-be08-48d8-8420-40bcaa86093b
 [grafana-demo]: https://github.com/khuedoan/homelab/assets/27996771/ad937b26-e9bc-4761-83ae-1c7f512ea97f
 [gitea-demo]: https://github.com/khuedoan/homelab/assets/27996771/c245534f-88d9-4565-bde8-b39f60ccee9e
-[matrix-demo]: https://user-images.githubusercontent.com/27996771/149448510-7163310c-2049-4ccd-901d-f11f605bfc32.png
 [woodpecker-demo]: https://github.com/khuedoan/homelab/assets/27996771/5d887688-d20a-44c8-8f77-0c625527dfe4
 [argocd-demo]: https://github.com/khuedoan/homelab/assets/27996771/527e2529-4fe1-4664-ab8a-b9eb3c492d20
 [alert-demo]: https://github.com/khuedoan/homelab/assets/27996771/c922f755-e911-4ca0-9d4a-6e552d387f18
-[ai-demo]: https://github.com/khuedoan/homelab/assets/27996771/d77ba511-00b7-47c3-9032-55679a099e70
 
 ### Tech stack
 
@@ -160,14 +143,14 @@ They can't capture all the project's features, but they are sufficient to get a 
         <td>The package manager for Kubernetes</td>
     </tr>
     <tr>
-        <td><img width="32" src="https://avatars.githubusercontent.com/u/49319725"></td>
-        <td><a href="https://k3s.io">K3s</a></td>
+        <td><img width="32" src="https://raw.githubusercontent.com/kubernetes-sigs/kubespray/8f4b7f9f5d9139e6a475286605730918a1ced65b/logo/logo-clear.png"></td>
+        <td><a href="https://kubespray.io">Kubespray</a></td>
         <td>Lightweight distribution of Kubernetes</td>
     </tr>
     <tr>
         <td><img width="32" src="https://kanidm.com/images/logo.svg"></td>
         <td><a href="https://kanidm.com">Kanidm</a></td>
-        <td>Modern and simple identity management platform</td>
+        <td>Deploy a Production Ready Kubernetes Cluster</td>
     </tr>
     <tr>
         <td><img width="32" src="https://avatars.githubusercontent.com/u/13629408"></td>
@@ -205,16 +188,6 @@ They can't capture all the project's features, but they are sufficient to get a 
         <td>Cloud-Native Storage for Kubernetes</td>
     </tr>
     <tr>
-        <td><img width="32" src="https://avatars.githubusercontent.com/u/48932923?s=200&v=4"></td>
-        <td><a href="https://tailscale.com">Tailscale</a></td>
-        <td>VPN without port forwarding</td>
-    </tr>
-    <tr>
-        <td><img width="32" src="https://avatars.githubusercontent.com/u/13991055?s=200&v=4"></td>
-        <td><a href="https://www.wireguard.com">Wireguard</a></td>
-        <td>Fast, modern, secure VPN tunnel</td>
-    </tr>
-    <tr>
         <td><img width="32" src="https://avatars.githubusercontent.com/u/84780935?s=200&v=4"></td>
         <td><a href="https://woodpecker-ci.org">Woodpecker CI</a></td>
         <td>Simple yet powerful CI/CD engine with great extensibility</td>
@@ -241,13 +214,6 @@ Any contributions you make are greatly appreciated.
 
 Please see [contributing guide](https://homelab.fullstackjam.com/reference/contributing) for more information.
 
-## License
-
-Copyright &copy; 2020 - 2024 Khue Doan
-
-Distributed under the GPLv3 License.
-See [license page](https://homelab.fullstackjam.com/reference/license) or `LICENSE.md` file for more information.
-
 ## Acknowledgements
 
 References:
@@ -271,24 +237,4 @@ References:
 Here is a list of the contributors who have helped to improve this project.
 Big shout-out to them!
 
-- ![](https://github.com/locmai.png?size=24) [@locmai](https://github.com/locmai)
-- ![](https://github.com/MatthewJohn.png?size=24) [@MatthewJohn](https://github.com/MatthewJohn)
-- ![](https://github.com/karpfediem.png?size=24) [@karpfediem](https://github.com/karpfediem)
-- ![](https://github.com/linhng98.png?size=24) [@linhng98](https://github.com/linhng98)
-- ![](https://github.com/BlueHatbRit.png?size=24) [@BlueHatbRit](https://github.com/BlueHatbRit)
-- ![](https://github.com/dotdiego.png?size=24) [@dotdiego](https://github.com/dotdiego)
-- ![](https://github.com/Crimrose.png?size=24) [@Crimrose](https://github.com/Crimrose)
-- ![](https://github.com/eventi.png?size=24) [@eventi](https://github.com/eventi)
-- ![](https://github.com/Bourne-ID.png?size=24) [@Bourne-ID](https://github.com/Bourne-ID)
-- ![](https://github.com/akwan.png?size=24) [@akwan](https://github.com/akwan)
-- ![](https://github.com/trangmaiq.png?size=24) [@trangmaiq](https://github.com/trangmaiq)
-- ![](https://github.com/tangowithfoxtrot.png?size=24) [@tangowithfoxtrot](https://github.com/tangowithfoxtrot)
-- ![](https://github.com/raedkit.png?size=24) [@raedkit](https://github.com/raedkit)
-- ![](https://github.com/ClashTheBunny.png?size=24) [@ClashTheBunny](https://github.com/ClashTheBunny)
-- ![](https://github.com/retX0.png?size=24) [@retX0](https://github.com/retX0)
-
-If you feel you're missing from this list, please feel free to add yourself in a PR.
-
-## Stargazers over time
-
-[![Stargazers over time](https://starchart.cc/khuedoan/homelab.svg)](https://starchart.cc/khuedoan/homelab)
+- ![](https://github.com/khuedoan.png?size=24) [@locmai](https://github.com/khuedoan)
