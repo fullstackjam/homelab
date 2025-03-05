@@ -38,7 +38,6 @@ Good enough for tinkering and personal usage, and reasonably secure.
     - [x] Gitea
     - [x] Woodpecker
     - [x] Private container registry
-    - [x] Homepage
 
 ## Stable requirements
 
