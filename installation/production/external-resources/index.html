@@ -1257,7 +1257,7 @@ Below is a list of external resources and why we need them (also see some <a hre
 <li>Create a workspace named <code>homelab-external</code>, this is the workspace where your homelab state will be stored.</li>
 <li>Change the "Execution Mode" from "Remote" to "Local". This will ensure your local machine, which can access your lab, is the one executing the terraform plan rather than the cloud runners.</li>
 </ol>
-<p>If you decide to use a <a href="https://www.terraform.io/language/settings/backends#available-backends">different Terraform backend</a>, you'll need to edit the <code>external/versions.tf</code> file as required.</p>
+<p>If you decide to use a <a href="https://www.terraform.io/language/settings/backends#available-backends">different Terraform backend</a>, you'll need to edit the <code>terraform/versions.tf</code> file as required.</p>
 <h3 id="cloudflare">Cloudflare</h3>
 <ul>
 <li>Buy a domain and <a href="https://developers.cloudflare.com/registrar/get-started/transfer-domain-to-cloudflare">transfer it to Cloudflare</a> if you haven't already</li>

@@ -1205,7 +1205,7 @@ AWS Secret Manager, Google Cloud Secret Manager, Azure Key Vault, 1Password, etc
   ExternalSecret --- ClusterSecretStore</code></pre>
 <h2 id="randomly-generated-secrets">Randomly generated secrets</h2>
 <p>This is useful when you want to generate random secrets like admin password and store in global secrets.</p>
-<div class="highlight"><span class="filename">./platform/global-secrets/files/secret-generator/config.yaml</span><pre><span></span><code><span class="c1"># Gitea</span>
+<div class="highlight"><span class="filename">./kubernetes/platform/global-secrets/files/secret-generator/config.yaml</span><pre><span></span><code><span class="c1"># Gitea</span>
 <span class="hll"><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">gitea.admin</span>
 </span><span class="hll"><span class="w">  </span><span class="nt">data</span><span class="p">:</span>
 </span><span class="hll"><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">password</span>
@@ -1239,7 +1239,7 @@ AWS Secret Manager, Google Cloud Secret Manager, Azure Key Vault, 1Password, etc
 <span class="w">      </span><span class="nt">special</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
 </code></pre></div>
 <h2 id="extra-third-party-secrets">Extra third-party secrets</h2>
-<p>For third-party secrets that you don't control, add them to <code>external/terraform.tfvars</code> under the <code>extra_secrets</code> key,
+<p>For third-party secrets that you don't control, add them to <code>terraform/terraform.tfvars</code> under the <code>extra_secrets</code> key,
 then run <code>make external</code>.</p>
 <p>They will be available as a Secret named <code>external</code> in the <code>global-secrets</code> namespace.
 You can use it with <code>ExternalSecret</code> just like any other global secret.</p>

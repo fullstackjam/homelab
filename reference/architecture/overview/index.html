@@ -1146,7 +1146,7 @@
 <div class="highlight"><pre><span></span><code>+--------------+
 |    ./apps    |
 |--------------|
-|  ./platform  |
+|  ./kubernetes/platform  |
 |--------------|       +------------+
 |   ./system   |- - - -| ./external |
 |--------------|       +------------+
@@ -1159,7 +1159,7 @@
 <ul>
 <li><code>./metal</code>: bare metal management, install Linux and Kubernetes</li>
 <li><code>./system</code>: critical system components for the cluster (load balancer, storage, ingress, operation tools...)</li>
-<li><code>./platform</code>: essential components for service hosting platform (git, build runners, dashboards...)</li>
+<li><code>./kubernetes/platform</code>: essential components for service hosting platform (git, build runners, dashboards...)</li>
 <li><code>./apps</code>: user facing applications</li>
 <li><code>./external</code> (optional): externally managed services</li>
 </ul>
@@ -1183,7 +1183,7 @@
 <li>Install the remaining components (storage, monitoring, etc)</li>
 </ul>
 </li>
-<li>(3) Build the <code>./platform</code> layer (Gitea, Grafana, SSO, etc)</li>
+<li>(3) Build the <code>./kubernetes/platform</code> layer (Gitea, Grafana, SSO, etc)</li>
 <li>(4) Deploy applications in the <code>./apps</code> layer</li>
 </ul>
 <pre class="mermaid"><code>flowchart TD
@@ -1210,7 +1210,7 @@
   cloudflare -.-&gt; external-dns
   cloudflare -.-&gt; cloudflared
 
-  subgraph platform[./platform]
+  subgraph platform[./kubernetes/platform]
     Gitea
     Woodpecker
     Grafana
